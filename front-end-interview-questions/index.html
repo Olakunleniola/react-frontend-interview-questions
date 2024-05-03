@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interview Questions</title>
+    <script src="./main.js" defer></script>
+    <link rel="stylesheet" href="./style.css">
+
+    <style>
+        /* QUESTION 2 SOLUTION */
+        #question2 {
+            width: 300px;
+            background-color: orange;
+            border: 2px solid;
+            font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+        
+        #box {
+            display: flex;
+            justify-content: space-between;
+            font-size: 12px;
+            font-weight: 900;
+            padding: 5px;    
+        }
+
+        #overlay span  {
+            margin-left: 2px;
+        }
+
+        #hover i:hover {
+            cursor: pointer;
+        }
+
+        #content {
+            text-align: center;
+            margin: 50px auto;
+            font-size: 40px;
+            font-weight: 900;
+        }
+
+        .triangle {
+            width: 0;
+            height: 0;
+            border-left: 50px solid transparent;
+            border-right: 50px solid transparent;
+            border-bottom: 100px solid; /* Change color as needed */
+            text-align: center;
+        }
+        
+    </style>
+</head>
+<body>
+
+    
+    <div class="triangle"></div>
+
+    <h1>FrontEnd Interview Question</h1>
+    <h2>Question 1</h2>
+    <p>
+        Write a function that make api call to https://jsonplaceholder.typicode.com/photos
+
+        <br> And display only odd id albums if today date is sunday, tuesday,
+        thursday, saturday.
+
+        <br>Display odd id albums if today date is monday,
+        wednesday, friday.
+
+        <br>if albumId + id mod 2 is 0, draw pink border around the image.
+    </p>
+
+    <h3>Solution </h3>
+
+    <div id="question1" style="display: flex; flex-wrap:wrap;"></div>
+
+    <h2>Question 2</h2>
+    <p>
+        Make the following:<br>
+        <br>- on hover the print, pencil and trash can show and
+        are clickable
+        <br>- text in middle is 50% margin and text center
+        <br>- the name is in top left
+        <br>- want an image to span the div<br>
+        <img src="https://recruitmentxl.com/frontend_card.png" alt="question2" width="300px">
+
+        <div id="question2">
+            <div id="box">
+                <div id="overlay">
+                    <img src="person.png" alt="person"/>
+                    <span>First Name Last Name</span>
+                </div>
+                <div id="hover">
+                    <i class="ftn print"/>
+                    <i class="ftn pencil"/>
+                    <i class="ftn trash"/>
+                </div>
+            </div>
+            <div id="content">
+                Poem Line 1<br/>
+                Poem Line 1<br/>
+                Poem Line 1<br/>
+            </div>
+        </div>
+    </p>
+
+    <h2>Question 3</h2>
+    <p>
+        Write a function in js where every 5 seconds add a
+        new row to the table with random data.
+        Add those headers to the table thead row.<br>
+        <br>ID -> Integer
+        <br>name -> string
+        <br>user -> string
+        <br>status -> [Active, Inactive, Suspend]
+        
+        <br><br><\table id="box">
+        </\table>
+
+        <br><br><\script>
+        <br>var headers = ['ID', 'Name', 'User', 'Status']
+        <br>function tablegeneration() {
+            <br>//code in here
+        <br>}
+        <br></\script>
+    </p>
+    
+    <h3>Solution</h3>
+
+    <table id="question3">
+    </table>
+
+    <h2>Question 4</h2>
+    <p>
+        Write a function where it calls an api and if it doesn't
+        respond in 20 seconds, throw an error<br><br>
+
+        async function some_function() {<br>
+        try {<br>
+            <br>const result = await fetch('someurl');
+            <br>//TODO if result doesn't return in 20 second throw an error
+            <br>const json = result.json();
+            <br>return json;
+        <br>} catch (error) {
+
+        <br>}
+    </p>
+    <h3>Solution</h3>
+    <div id="question4"></div>
+
+    <h2>Question 5</h2>
+    <p>
+        I have email ricky-i-am-the-best@gmail.com .<br>
+        <br>// I want you to write a function that turn all constants into ~.
+        <br>
+        <br>// I have xyz_controller_method.js filename.
+        <br>// I want you convert snake case into camel case.
+        <br>// Then I want the list reversed.
+    </p>
+
+    <h3>Solution</h3>
+    <div id="question5">
+    </div>
+
+</body> 
+</html>

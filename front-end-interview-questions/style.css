@@ -1,0 +1,49 @@
+table {
+    width: 100%;
+    border-collapse: collapse;
+    border: 1px solid #ddd;
+  }
+  
+/* Style the table header */
+table th {
+    background-color: #f2f2f2;
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+  
+/* Style the table body */
+table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+  
+/* Add hover effect to table rows */
+table tr:hover {
+    background-color: #f5f5f5;
+}
+
+#question4 {
+    font-size: 30px;
+    color: red;
+}
+
+#question5{
+    font-size: 20px;
+    color: blue;
+}
+
+@keyframes flash {
+    50% {
+        color: blue;
+    }
+    100% {
+        color: red;
+    }
+
+}
+
+.triangle {
+    animation: flash .5s infinite alternate;
+    color: aqua;
+}
